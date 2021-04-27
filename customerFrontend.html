@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="formChecker.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<body>
+    <div class="center">
+    <form name="customerForm" action="customerBackend.php" onsubmit="return formChecker" method="post">
+        Register:
+        <br><br>
+        email address: <br><input type="text" name="username"><br>
+        password: <br><input type="text" name="password"><br>
+        <br>
+
+        Enter a quantity for the items below:
+        <br><br>
+        Star Wraith ($16.00): <br><input type="text" name="wraithQuant"><br>
+        Champion Firebird ($15.00): <br><input type="text" name="firebirdQuant"><br>
+        Aviar X3 ($12.00): <br><input type="text" name="aviarQuant"><br>
+        <br>
+
+        Shipping:
+        <br><br>
+        <input type="radio" name="shipping" value="Free 7 day">Free 7 day <br>
+        <input type="radio" name="shipping" value="$50 over night">$50 over night <br>
+        <input type="radio" name="shipping" value="$5 three day">$5 three day <br>
+        <br>
+        <input type="reset">
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</head>
+</html>
